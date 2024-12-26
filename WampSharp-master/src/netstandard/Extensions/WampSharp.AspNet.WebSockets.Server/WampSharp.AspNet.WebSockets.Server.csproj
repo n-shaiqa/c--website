@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <title>WampSharp ASP.NET WebSockets support</title>
+    <description>WampSharp ASP.NET WebSockets support</description>
+    <PackageTags>$(PackageTags) websocket4net wampv1 aspnet</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\WampSharp\WampSharp.csproj" />
+    <ProjectReference Include="..\WampSharp.WebSockets\WampSharp.WebSockets.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web" />
+  </ItemGroup>
+</Project>

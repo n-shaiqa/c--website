@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net461;netstandard2.0;netstandard2.1</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WampSharp.WAMP1\WampSharp.WAMP1.csproj" />
+    <ProjectReference Include="..\Default\WampSharp.NewtonsoftJson\WampSharp.NewtonsoftJson.csproj" />
+    <ProjectReference Include="..\Default\WampSharp.Fleck\WampSharp.Fleck.csproj" />
+    <ProjectReference Include="..\Default\WampSharp.WebSocket4Net\WampSharp.WebSocket4Net.csproj" />
+  </ItemGroup>
+  <PropertyGroup>
+    <title>WampSharp WAMP1 default binding</title>
+    <description>WampSharp WAMP1 default binding, implemented using Newtonsoft.Json, WebSocket4Net and Fleck</description>
+    <PackageTags>websockets wampws rpc pubsub fleck newtonsoft json websocket4net wampv1</PackageTags>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net461;netcoreapp3.1</TargetFrameworks>
+    <LangVersion>8</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CliFx" Version="0.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Default\WampSharp.NewtonsoftJson\WampSharp.NewtonsoftJson.csproj" />
+    <ProjectReference Include="..\..\..\Default\WampSharp.NewtonsoftMessagePack\WampSharp.NewtonsoftMessagePack.csproj" />
+    <ProjectReference Include="..\..\..\Extensions\WampSharp.NewtonsoftCbor\WampSharp.NewtonsoftCbor.csproj" />
+    <ProjectReference Include="..\..\..\Extensions\WampSharp.RawSocket\WampSharp.RawSocket.csproj" />
+    <ProjectReference Include="..\..\..\Extensions\WampSharp.WebSockets\WampSharp.WebSockets.csproj" />
+    <ProjectReference Include="..\..\..\WampSharp\WampSharp.csproj" />
+  </ItemGroup>
+
+</Project>

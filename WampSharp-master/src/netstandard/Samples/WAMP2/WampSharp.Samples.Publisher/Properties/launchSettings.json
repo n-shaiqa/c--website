@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "WampSharp.Samples.Publisher": {
+      "commandName": "Project",
+      "commandLineArgs": "complex reflection -t rawsocket -s msgpack"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <title>WampSharp Owin support</title>
+    <description>WampSharp Owin support</description>
+    <PackageTags>$(PackageTags) wampv1 owin</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\WampSharp\WampSharp.csproj" />
+    <ProjectReference Include="..\WampSharp.WebSockets\WampSharp.WebSockets.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Owin" Version="3.0.1" />
+  </ItemGroup>
+</Project>

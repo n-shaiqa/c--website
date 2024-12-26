@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net461;netstandard2.0;netstandard2.1</TargetFrameworks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <description>WampSharp WAMP1 support</description>
+    <title>WampSharp WAMP1 support</title>
+    <PackageTags>websockets wampws rpc pubsub wampv1</PackageTags>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WampSharp\WampSharp.csproj" />
+  </ItemGroup>
+</Project>

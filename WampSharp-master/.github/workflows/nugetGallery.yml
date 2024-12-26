@@ -1,0 +1,27 @@
+name: NuGet Gallery NuGet generation
+
+on:
+  release:
+    types: [published]
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: windows-latest
+    name: Update NuGet 
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@master
+
+      - name: Build solution and generate NuGet package
+        run: |  
+          cd src\netstandard\
+          dotnet pack -c Release -o out /p:Version="${{ secrets.PACKAGE_VERSION }}"
+      - name: Install NuGet client
+        uses: nuget/setup-nuget@v1
+
+      - name: Push generated package to NuGet Gallery
+        run: |
+          cd src\netstandard\        
+          nuget push .\out\*.nupkg -SkipDuplicate -Source https://api.nuget.org/v3/index.json -ApiKey ${{ secrets.NUGET_TOKEN }} -NoSymbols

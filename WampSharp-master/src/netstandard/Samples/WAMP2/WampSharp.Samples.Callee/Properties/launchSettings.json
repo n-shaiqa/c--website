@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "WampSharp.Samples.Callee": {
+      "commandName": "Project",
+      "commandLineArgs": "complex -t rawsocket -s msgpack"
+    }
+  }
+}

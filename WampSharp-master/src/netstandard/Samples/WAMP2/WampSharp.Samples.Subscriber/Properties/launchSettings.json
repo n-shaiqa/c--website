@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "WampSharp.Samples.Subscriber": {
+      "commandName": "Project",
+      "commandLineArgs": "complex reflection -s cbor"
+    }
+  }
+}

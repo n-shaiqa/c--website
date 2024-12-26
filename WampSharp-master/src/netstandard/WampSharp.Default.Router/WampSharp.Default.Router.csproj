@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net461;netstandard2.0;netstandard2.1</TargetFrameworks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <description>WampSharp above Fleck, Newtonsoft.Json and NewtonsoftMessagePack</description>
+    <title>WampSharp default router binding</title>
+    <PackageTags>$(PackageTags) fleck newtonsoft json messagepack wampv2</PackageTags>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Default\WampSharp.NewtonsoftJson\WampSharp.NewtonsoftJson.csproj" />
+    <ProjectReference Include="..\Default\WampSharp.NewtonsoftMessagePack\WampSharp.NewtonsoftMessagePack.csproj" />
+    <ProjectReference Include="..\Default\WampSharp.Fleck\WampSharp.Fleck.csproj" />
+  </ItemGroup>
+</Project>
